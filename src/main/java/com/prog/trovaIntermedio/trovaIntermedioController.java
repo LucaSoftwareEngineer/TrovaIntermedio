@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class trovaIntermedioController {
     
     @GetMapping("/calcolaIntermedio")
-    public String getMethodName(@RequestParam Integer numA, @RequestParam Integer numB, @RequestParam Integer numC) {
+    public String calcolaIntermedio(@RequestParam Integer numA, @RequestParam Integer numB, @RequestParam Integer numC) {
         if (numA > numB) {
             if (numA < numC) {
                 return numA.toString();
